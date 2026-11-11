@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #230de7;
+}
+nav#topmenu ul {
+  list-style: none;
+  background-color: #4c18e7;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+nav#topmenu li {
+  font-size: 24px;
+  line-height: 40px;
+  height: 40px;
+  display: inline-block;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+/* Default style (laptops/desktops) */
+nav#topmenu a {
+    text-decoration: none;
+    color: #173fd1;
+    padding: 10px 15px;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+#topmenu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+#topmenu ul li a {
+  text-decoration: none;
+  color: rgb(59, 198, 186);
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: all 0.3s ease; 
+}
+
+#topmenu ul li a:hover {
+  color: rgb(52, 7, 218);               
+  background-color: #3135a8;  
+  border-radius: 4px;        
+  transform: scale(1.1);     
+}
+   .image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .image-container img {
+      width: 240px;
+      height: auto;
+    }
+    .image-container .text-overlay {
+      position: absolute;
+      bottom: 20px;       
+      left: 20px;         
+      color: white;       
+      background: rgba(0,0,0,0.5); 
+      padding: 8px 12px;
+      font-size: 18px;
+      border-radius: 4px;
+    }
+    /*Responsive design for these devices*/
+/* Mobile */
+@media (max-width: 767px) { }
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) { }
+
+/* Desktop */
+@media (min-width: 1024px) { }
+/* For Tablets */
+@media screen and (max-width: 768px) {
+    nav#topmenu a {
+        padding: 8px 12px;
+        font-size: 16px;
+        flex-wrap: wrap;
+    }
+}
+
+/* For Mobile phones */
+@media screen and (max-width: 480px) {
+    nav#topmenu a {
+        display: block;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: auto;
+}
