@@ -1,106 +1,117 @@
+/* General Page */
 body {
-  margin: 0;
-  padding: 0;
-  background: #230de7;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
-nav#topmenu ul {
-  list-style: none;
-  background-color: #4c18e7;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-nav#topmenu li {
-  font-size: 24px;
-  line-height: 40px;
-  height: 40px;
-  display: inline-block;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-/* Default style (laptops/desktops) */
-nav#topmenu a {
-    text-decoration: none;
-    color: #173fd1;
-    padding: 10px 15px;
-    display: inline-block;
-    flex-wrap: wrap;
+
+/* Navigation Bar */
+#topmenu {
+    background-color: #0d47a1;
 }
 
 #topmenu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
 }
 
 #topmenu ul li a {
-  text-decoration: none;
-  color: rgb(59, 198, 186);
-  font-size: 18px;
-  padding: 8px 12px;
-  transition: all 0.3s ease; 
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
 }
 
 #topmenu ul li a:hover {
-  color: rgb(52, 7, 218);               
-  background-color: #3135a8;  
-  border-radius: 4px;        
-  transform: scale(1.1);     
-}
-   .image-container {
-      position: relative;
-      display: inline-block;
-    }
-
-    .image-container img {
-      width: 240px;
-      height: auto;
-    }
-    .image-container .text-overlay {
-      position: absolute;
-      bottom: 20px;       
-      left: 20px;         
-      color: white;       
-      background: rgba(0,0,0,0.5); 
-      padding: 8px 12px;
-      font-size: 18px;
-      border-radius: 4px;
-    }
-    /*Responsive design for these devices*/
-/* Mobile */
-@media (max-width: 767px) { }
-
-/* Tablet */
-@media (min-width: 768px) and (max-width: 1023px) { }
-
-/* Desktop */
-@media (min-width: 1024px) { }
-/* For Tablets */
-@media screen and (max-width: 768px) {
-    nav#topmenu a {
-        padding: 8px 12px;
-        font-size: 16px;
-        flex-wrap: wrap;
-    }
+    background-color: #ff9800;
+    border-radius: 5px;
 }
 
-/* For Mobile phones */
-@media screen and (max-width: 480px) {
-    nav#topmenu a {
-        display: block;
-        flex-wrap: wrap;
-        width: 100%;
-        text-align: center;
-        padding: 12px;
-        font-size: 14px;
-    }
-}
+/* Logo */
 .logo {
+    width: 80px;
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 100px;
-    height: auto;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url("repair-shop.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* Button */
+.button {
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #e68900;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+.service-card {
+    background: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    #topmenu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
 }
